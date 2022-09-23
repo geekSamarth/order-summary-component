@@ -17,7 +17,7 @@ body{
 }
 .main-content{
     height: 450px;
-    width: 375px;
+    width: 360px;
     display: flex;
     flex-direction: column;
 }
@@ -27,16 +27,85 @@ body{
     border-radius: 15px 15px 0 0;
 }
 .main-content .wrapper{
-    padding: 20px;
+    padding: 30px;
     background-color: white;
     margin-top: 0px;
+    border-radius: 0 0 15px 15px;
 }
 .wrapper h2{
     color: hsl(223, 47%, 23%);
     text-align: center;
+    font-weight: 900;
 }
 .wrapper p{
     font-size: 16px;
     text-align: center;
     color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    line-height: 1.2;
+}
+.wrapper .pricing{
+    height:90px;
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+}
+.wrapper .pricing img{
+    height: 48px;
+    margin: 16px;
+}
+.wrapper .pricing .plans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plans span{
+    font-weight: 900;
+    margin-bottom: 3px;
+}
+.plans p{
+    font-weight: 500;
+}
+.pricing a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    margin-left: 50px;
+}
+.pricing a:hover{
+    text-decoration: none;
+    color: hsl(241, 84%, 66%);
+}
+.wrapper .foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .foot button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color:hsl(245, 75%, 52%) ;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 20px 15px rgba(114, 128, 167, 0.25);
+    /* margin-bottom: 25px; */
+    margin-bottom: 1.1rem;
+}
+.wrapper .foot button:hover{
+    background-color: rgba(56, 41, 244, 0.75);
+}
+.wrapper .foot span{
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+.wrapper .foot span:hover{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
 }
