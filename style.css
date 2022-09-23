@@ -16,8 +16,8 @@ body{
     align-items: center;
 }
 .main-content{
-    height: 450px;
-    width: 360px;
+    height: 550px;
+    width: 350px;
     display: flex;
     flex-direction: column;
 }
@@ -27,33 +27,40 @@ body{
     border-radius: 15px 15px 0 0;
 }
 .main-content .wrapper{
-    padding: 30px;
+    padding: 20px;
     background-color: white;
     margin-top: 0px;
     border-radius: 0 0 15px 15px;
+}
+.wrapper .head{
+    margin: 0 25px;
 }
 .wrapper h2{
     color: hsl(223, 47%, 23%);
     text-align: center;
     font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .wrapper p{
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     color: hsl(224, 23%, 55%);
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 .wrapper .pricing{
-    height:90px;
+    height:80px;
     display: flex;
     align-items: center;
     background-color: hsl(225, 100%, 98%);
     border-radius: 8px;
+    margin-bottom: 1.7rem;
 }
 .wrapper .pricing img{
     height: 48px;
-    margin: 16px;
+    margin: 15px;
 }
 .wrapper .pricing .plans{
     display: flex;
@@ -62,7 +69,8 @@ body{
 }
 .plans span{
     font-weight: 900;
-    margin-bottom: 3px;
+    margin-top:16px;
+    margin-bottom: 2px;
 }
 .plans p{
     font-weight: 500;
@@ -70,11 +78,11 @@ body{
 .pricing a{
     color: hsl(245, 75%, 52%);
     font-weight: 700;
-    margin-left: 50px;
+    margin-left: 3.6rem;
 }
 .pricing a:hover{
     text-decoration: none;
-    color: hsl(241, 84%, 66%);
+    color: rgba(56, 41, 244, 0.75);
 }
 .wrapper .foot{
     display: flex;
@@ -93,7 +101,7 @@ body{
     color: white;
     font-weight: 700;
     font-size: 14px;
-    box-shadow: 0 20px 15px rgba(114, 128, 167, 0.25);
+    box-shadow: 0 20px 15px rgba(119, 135, 189, 0.5);
     /* margin-bottom: 25px; */
     margin-bottom: 1.1rem;
 }
@@ -103,9 +111,19 @@ body{
 .wrapper .foot span{
     font-weight: 700;
     color: hsl(224, 23%, 55%);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 .wrapper .foot span:hover{
     font-weight: 900;
     color: hsl(223, 47%, 23%);
     cursor: pointer;
+}
+
+/* adding responsiveness using media queries*/
+
+@media screen and (max-width:375px) {
+    .order-component{
+        background:hsl(225, 100%, 94%) url('./images/pattern-background-mobile.svg')  no-repeat;
+    }
 }
